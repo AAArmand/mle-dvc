@@ -43,6 +43,10 @@ stages:
       hash: md5
       md5: 78a4f78372902b1b1c42a9682520ef2b
       size: 11390
+      cloud:
+        mle_dvc_storage:
+          etag: 78a4f78372902b1b1c42a9682520ef2b
+          version_id: 00061F780420D4BC
   evaluate_model:
     cmd: python scripts/evaluate.py
     deps:
@@ -68,3 +72,7 @@ stages:
       hash: md5
       md5: 176dfdd1312d9a659f200386fbd92e7f
       size: 76
+      cloud:
+        mle_dvc_storage:
+          etag: 176dfdd1312d9a659f200386fbd92e7f
+          version_id: 00061F78042083D6
