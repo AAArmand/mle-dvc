@@ -6,6 +6,7 @@ from sklearn.pipeline import Pipeline
 from category_encoders import CatBoostEncoder
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.linear_model import LogisticRegression
+from catboost import CatBoostClassifier
 import yaml
 import os
 import joblib
@@ -36,7 +37,6 @@ def fit_model():
         verbose_feature_names_out=False
     )
 
-	# Cat Boost 
 	model = CatBoostClassifier(auto_class_weights=params['auto_class_weights'])
 
 	# Pipeline
