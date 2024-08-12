@@ -36,8 +36,10 @@ def fit_model():
         verbose_feature_names_out=False
     )
 
+	# Cat Boost 
 	model = CatBoostClassifier(auto_class_weights=params['auto_class_weights'])
 
+	# Pipeline
 	pipeline = Pipeline(
         [
             ('preprocessor', preprocessor),
